@@ -10,6 +10,7 @@ export class MyCard extends LitElement {
 
   static get tag() {
     return 'my-card';
+    
   }
 
   constructor() {
@@ -20,6 +21,7 @@ export class MyCard extends LitElement {
     this.bounty = "$1000";
     this.img = "https://www.thepopverse.com/_next/image?url=https%3A%2F%2Fmedia.thepopverse.com%2Fmedia%2Ftony-tony-chopper-from-one-piece-t0mkr5fnn5tevppawlpiwuqtca.jpg&w=1280&q=75";
     this.bg = "#D8C4A8";
+    this.fancy = false;
   }
 
   static get styles() {
@@ -68,6 +70,7 @@ export class MyCard extends LitElement {
       name: { type: String },
       bounty: { type: String },
       bg: { type: String },
+      fancy: { type: Boolean, reflect: true },
     };
   }
 }
